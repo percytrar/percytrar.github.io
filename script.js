@@ -54,7 +54,7 @@
 			function showTime(){
 				var end = new Date().getTime();
 				var time = (end-start)/1000;
-				document.getElementById("timer").innerHTML = "Time Taken: " + time;
+				document.getElementById("timer").innerHTML = "Time Taken: " + time+"s";
 				if(bestScore>time)
 					bestScore = time;
 				fig();
@@ -67,5 +67,5 @@
 				document.getElementById("page").style.display = "none";	
 				document.getElementById("final-box").style.display = "block";		
 				document.getElementById("end-result").innerHTML = "Game Over!";
-				document.getElementById("final").innerHTML = "Your Best Score: " + bestScore;
+				document.getElementById("final").innerHTML = "Your Best Score: " + bestScore+"s";
 			}
