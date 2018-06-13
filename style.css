@@ -1,0 +1,39 @@
+			body{
+				font-family: 'Roboto Condensed', sans-serif;
+			}
+			#page{
+				width: 80%;
+				height:auto;
+				margin-left: 10%;
+			}
+			#end{
+				width:50px;
+				height: 30px;
+				background-color: Orange;
+				text-align: center;
+				font-weight: bold;
+				border-radius: 40px;
+				border-style: solid;
+			}
+			#heading{
+				color:#4285F4;
+				font-weight: bold;
+			}
+			#end-result{
+				text-align: center;
+				color: red;
+				font-weight: bold;
+				font-size: 60;
+			}
+			#final{
+				text-align: center;
+				color: green;
+				font-weight: bold;
+				font-size: 50;
+			}
+			#final-box{
+				background-color: #FFB399;
+				width: auto;
+				height: auto;
+				text-align: center;
+			}
