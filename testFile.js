@@ -169,6 +169,12 @@ form.addEventListener("submit", function (e) {
   console.log("Current Users:", registeredUsers);
 });
 
+/**
+ * Find registered users whose first name, last name, or email contains the given keyword.
+ *
+ * @param {string} keyword - Substring to search for within users' `firstName`, `lastName`, or `email`.
+ * @returns {Array<Object>} An array of user objects where `firstName`, `lastName`, or `email` includes `keyword`.
+ */
 function searchUsers(keyword) {
   return registeredUsers.filter((user) => {
     return (
@@ -179,6 +185,11 @@ function searchUsers(keyword) {
   });
 }
 
+/**
+ * Remove the user with the given id from the in-memory list and refresh the displayed user list.
+ * Updates the global `registeredUsers` array by removing matching entries and re-renders the `#output` container.
+ * @param {number|string} id - The identifier of the user to remove.
+ */
 function deleteUser(id) {
   registeredUsers = registeredUsers.filter((user) => user.id != id);
 
